@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Masjid Display</title>
-  <style>
-    body { margin: 0; background: #000; }
-  </style>
+  <meta http-equiv="refresh" content="3600">
 </head>
-<body>
+<body style="margin:0;">
   <iframe 
     src="https://timing.athanplus.com/masjid/widgets/embed?theme=2&masjid_id=GAEbJYdn&labeljumuah1=Jumu'ah khutbah&labeljumuah2=Jumu'ah iqama"
     width="100%"
-    height="100vh"
+    height="505"
     frameborder="0">
   </iframe>
-
-  <script>
-    function scheduleMidnightRefresh() {
-      const now = new Date();
-      const midnight = new Date();
-
-      // Set to 12:00:01 AM tomorrow
-      midnight.setHours(24, 0, 1, 0); // hours, minutes, seconds, milliseconds
-
-      const timeUntilMidnight = midnight.getTime() - now.getTime();
-
-      setTimeout(function() {
-        location.reload();
-      }, timeUntilMidnight);
-    }
-
-    scheduleMidnightRefresh();
-  </script>
 </body>
 </html>
