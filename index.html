@@ -3,17 +3,20 @@
 <head>
   <meta http-equiv="refresh" content="3600"> <!-- optional, hourly refresh -->
   <style>
+    /* Make entire page black and remove any spacing */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: #000; /* optional, prevents flash during refresh */
+      background-color: #000; /* black background */
     }
 
+    /* Make iframe fill the screen */
     iframe {
       width: 100%;
-      height: 100vh; /* 100% of viewport height */
+      height: 100vh; /* full viewport height */
       border: 0;
+      display: block; /* remove inline spacing */
     }
   </style>
 </head>
